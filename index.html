@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Music Explorer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main>
+        <section class="top-section">
+
+            <div class="brand">
+                <h1>Music Explorer</h1>
+                <p>Discover your favourite music</p>
+            </div>
+
+            <div class="search-section">
+                <input type="text" id="search-input" placeholder="Search songs or artists...">
+
+                <button id="search-btn">Search</button>
+            </div>
+        </section>
+
+        <section class="filter-section">
+
+            <button id="all-btn" class="active">
+                All Songs
+            </button>
+
+            <button id="favorites-btn">
+                ♥ Favourites
+            </button>
+
+            <button id="clear-favorites-btn">
+                Clear Favourites
+            </button>
+
+        </section>
+
+        <section class="sort-section">
+
+            <div class="discover-heading">
+                <h2>Discover Music</h2>
+                <p>Explore songs and find your next favourite.</p>
+            </div>
+
+            <div class="sort-control">
+
+                <label for="sort-select">Sort by:</label>
+
+                <select id="sort-select">
+                    <option value="default">Default</option>
+                    <option value="title">Song Name (A-Z)</option>
+                    <option value="artist">Artist Name (A-Z)</option>
+                </select>
+
+            </div>
+
+        </section>
+
+        <div id="loader" class="loader hidden"></div>
+
+        <p id="error-message" role="status"></p>
+
+        <section id="music-container"></section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h2>♫ Music Explorer</h2>
+                <p>Discover music. Explore artists. Find your favourites.</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="#top">Home</a>
+                <a href="#music-container">Explore Music</a>
+                <a href="#favorites-btn">Favourites</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Music Explorer. All rights reserved.</p>
+            <p>Made with ♥ for music lovers</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
